@@ -1,6 +1,6 @@
 # HNU-CleanFrame for SeedLLM
 
-
+This repository contains the code for the HNU-CleanFrame for SeedLLM project. The main goal of this project is to clean and structure multimodal data into a text format that can be effectively utilized by SeedLLM models.
 
 ## Theory & Frame
 
@@ -19,14 +19,15 @@ pip install -r requirements.txt
 Pipeline
 
 ```
-
+python textify.py       # 模态文本化模块
+python deduplicator.py  # 去重精简模块
 ```
 
 分模块作用
 
 ```bash
 # 模态文本化模块
-# 修改main函数中的目标文件夹，默认为test文件夹（提供了一些示例）
+# 修改main函数中的目标文件夹，默认为test文件夹（已经提供了一些示例）
 python textify.py
 # 该步骤的结果输出到output_text文件夹中
 
